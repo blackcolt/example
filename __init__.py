@@ -1,9 +1,9 @@
-import requests
+from selenium import webdriver
 import time
 
 if __name__ == '__main__':
-    r = requests.get('https://ynet.co.il')
     for i in range(1000):
         time.sleep(2)
-        print(r.status_code)
-        print(r.text)
+        driver = webdriver.Opera()
+        driver.get("http://google.com")
+        print(1)
